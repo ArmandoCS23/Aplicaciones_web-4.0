@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Productos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5 mb-4">Lista de Productos</h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Descripción</th>
+                </tr>
+            </thead>
+            <tbody>
+                $for producto in productos:
+                <tr>
+                    <td>$producto.id_producto</td>
+                    <td>$producto.nombre</td>
+                    <td>$producto.precio</td>
+                    <td>$producto.descripcion</td>
+                </tr>
+                $end
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
