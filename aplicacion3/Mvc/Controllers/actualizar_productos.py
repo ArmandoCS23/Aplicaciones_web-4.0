@@ -1,5 +1,5 @@
 import web
-from Models.modelo_productos import ModeloProductos
+ 
 
 render = web.template.render('Views/')
 
