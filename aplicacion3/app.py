@@ -1,5 +1,5 @@
 import web
-from Controllers import lista_productos, insertar_productos, borrar_productos, detalle_productos, actualizar_productos
+from Mvc.Controllers import lista_productos, insertar_productos, borrar_productos, detalle_productos, actualizar_productos
 
 urls = (
     '/', 'lista_productos.ListaProductos',
