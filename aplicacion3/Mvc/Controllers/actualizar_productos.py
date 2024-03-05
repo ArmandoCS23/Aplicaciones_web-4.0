@@ -1,6 +1,6 @@
 import web
+from Mvc.Models.modelo_productos import ModeloProductos 
  
-
 render = web.template.render('Views/')
 
 class ActualizarProductos:
@@ -23,7 +23,3 @@ class ActualizarProductos:
             return "Producto actualizado exitosamente"
         else:
             return "Error al actualizar el producto"
-
-urls = (
-    '/actualizar/(.*)', 'ActualizarProductos'
-)

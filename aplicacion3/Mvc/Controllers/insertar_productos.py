@@ -17,7 +17,3 @@ class InsertarProductos:
             return "Producto insertado exitosamente"
         else:
             return "Error al insertar el producto"
-
-urls = (
-    '/insertar', 'InsertarProductos'
-)

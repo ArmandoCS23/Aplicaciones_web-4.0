@@ -9,6 +9,4 @@ class DetalleProductos:
         producto = modelo.detalleProducto(int(id_producto))
         return render.detalle_productos(producto)
 
-urls = (
-    '/detalle/(.*)', 'DetalleProductos'
-)
+

@@ -7,8 +7,4 @@ class ListaProductos:
     def GET(self):
         modelo = ModeloProductos()  # Crear una instancia de ModeloProductos
         productos = modelo.listaProductos()  # Llamar al método listaProductos de la instancia
-        return render.lista_productos(productos)
-
-urls = (
-    '/', 'ListaProductos'
-)
+        return render.lista_productos(productos=productos)

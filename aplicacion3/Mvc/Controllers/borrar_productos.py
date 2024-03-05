@@ -12,6 +12,3 @@ class BorrarProductos:
         else:
             return "Error al borrar el producto"
 
-urls = (
-    '/borrar/(.*)', 'BorrarProductos'
-)
