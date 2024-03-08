@@ -1,0 +1,59 @@
+$def with(productos)
+<div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+    <form class="flex flex-column sm:flex-row flex-wrap space-y-4 sm:space-y-0 items-center justify-around pb-4" method="POST" action="">
+        <div class="row g-3 align-items-center">
+            <div class="col-auto">
+              <labe class="col-form-label">Buscar producto: </label>
+            </div>
+            <div class="col-auto">
+                <input type="text" id="nombre" name="nombre" class="form-control" required>
+            </div>
+            <div class="col-auto">
+                <button type="submit" class="btn btn-info">Buscar</button>
+            </div>
+          </div>
+    </form>
+    <table class="table table-striped">
+        <thead class="text-xs text-gray-700 uppercase bg-gray-50">
+            <tr>
+                <th scope="col" class="px-6 py-3">
+                    Nombre
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Descripción
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Precio
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Existencias
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Opciones
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            $for campo in productos:
+            <tr class="bg-white border-b hover:bg-gray-50">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                    $campo['nombre']
+                </th>
+                <td class="px-6 py-4">
+                    $campo['descripción']
+                </td>
+                <td class="px-6 py-4">
+                    $campo['precio']
+                </td>
+                <td class="px-6 py-4">
+                    $campo['existencias']
+                </td>
+                <td class="px-6 py-4">
+                    <a href="/detalle/$campo['id_productos']" class="btn btn-warning">Detalles</a>
+                    <a href="/actualizar/$campo['id_productos']" class="btn btn-success">Actualizar</a>
+                    <a href="/borrar/$campo['id_productos']" class="btn btn-danger">Borrar</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
