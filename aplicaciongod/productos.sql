@@ -7,6 +7,3 @@ CREATE TABLE IF NOT EXISTS productos (
     precio REAL NOT NULL,
     existencias INTEGER NOT NULL
 );
-
-INSERT INTO productos(nombre, descripcion, precio, existencias) VALUES ('Apuntador', 'Apuntador Laser', 100, 10);
-INSERT INTO productos(nombre, descripcion, precio, existencias) VALUES ('Mouse', 'Mouse Lenovo', 150, 5);
