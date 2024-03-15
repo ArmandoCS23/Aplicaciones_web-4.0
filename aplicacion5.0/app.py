@@ -1,4 +1,6 @@
+
 import web
+
 
 urls = (
     '/', 'mvc.controllers.lista_productos.ListaProductos',
@@ -9,7 +11,9 @@ urls = (
     '/borrar/(.*)', 'mvc.controllers.borrar_productos.BorrarProductos'
     )
 
+
 app = web.application(urls, globals())
+
 
 if __name__ == '__main__':
     app.run()
