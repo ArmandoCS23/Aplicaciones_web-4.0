@@ -57,4 +57,4 @@ class ActualizarProductos:
         
         except Exception as error:
             print(f'Ocurrió un error {error} - 105_2 | Controlador')
-            return "Oucrrió un error"
+            return "Ocurrió un error: el numero no puede ser negativo"

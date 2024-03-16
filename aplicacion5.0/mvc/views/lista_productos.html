@@ -3,7 +3,7 @@ $def with(productos)
     <div class="container py-5">
       <form class="row g-3 align-items-center mb-4" method="POST" action="">
         <div class="col-auto">
-          <a href="/insertar" class="btn btn-warning">Insertar</a>
+          <a href="/insertar" class="btn btn-outline-dark">Insertar</a>
         </div>
         <div class="col-auto">
           <div class="input-group">
@@ -14,7 +14,7 @@ $def with(productos)
           </div>
         </div>
         <div class="col-auto">
-          <button type="submit" class="btn btn-info">Buscar</button>
+          <button type="submit" class="btn btn-outline-info">Buscar</button>
         </div>
       </form>
       <div class="table-responsive">
@@ -38,9 +38,9 @@ $def with(productos)
               <td>$campo['existencias']</td>
               <td><img src="data:image/$campo['extension'];base64, $campo['imagen']" alt="" width="45" height="45"></td>
               <td>
-                <a href="/detalle/$campo['id_productos']" class="btn btn-primary">Detalles</a>
-                <a href="/actualizar/$campo['id_productos']" class="btn btn-success">Actualizar</a>
-                <a href="/borrar/$campo['id_productos']" class="btn btn-danger">Borrar</a>
+                <a href="/detalle/$campo['id_productos']" class="btn btn-outline-primary">Detalles</a>
+                <a href="/actualizar/$campo['id_productos']" class="btn btn-outline-success">Actualizar</a>
+                <a href="/borrar/$campo['id_productos']" class="btn btn-outline-danger">Borrar</a>
               </td>
             </tr>
           </tbody>
